@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello from HTML</title>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1>Hello from HyperText</h1>
-    Publish page with GitHub Pages.
-  </body>
+<html lang="ja" dir="ltr">
+    <head>
+        <title>msmms-x86-64のページ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="/msmms-x86-64/index.css">
+    </head>
+    <body>
+        <div class="bcard_container">
+            <div class="bcard">
+                <div class="bcard_content bcf main_bc_front">
+                    <div>
+                        <span style="font-size: 14px; color: #0008; line-height: 1;">自称デザイナー・プログラマ</span><br>
+                        <h2 style="line-height: 1;">msmms_x86_64</h2>
+                        <br>
+                        <div style="font-size: 14px; line-height: 1.25;">
+                            連絡 (Discord): msmms_x86_64<br>
+                            日常報告 (X): @msmms_x86_64<br>
+                            業務 (GitHub) : msmms-x86-64
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <span style="font-size: 14px; color: #0008; line-height: 1; font-style: italic;">Hover to Flip Business Card...</span>
+                    </div>
+                </div>
+                <div class="bcard_content bcb main_bc_back">
+                    <div>
+                        <span style="font-size: 14px; color: #FFF8; line-height: 1;">msmms_x86_64 &gt;</span><br>
+                        <h2 style="line-height: 1;">自己紹介</h2>
+                        <br>
+                        <div style="font-size: 14px; line-height: 1.25;">
+                            絵を描けるようになりたい...<br>
+                            普段からNECのビジネスパソコンを愛用しています<br>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-size: 14px; color: #FFF8; line-height: 1; font-style: italic;">Leave Hover to Back Business Card...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_nav">
+                ↓スクロール... サイト作成参考、ポートフォリオ等...
+            </div>
+        </div>
+        <script>
+            const cards = document.querySelectorAll(".bcard");
+
+            cards.forEach((card) => {
+                card.addEventListener("mouseover", () => {
+                    card.classList.add("flipped");
+                });
+                card.addEventListener("mouseout", () => {
+                    card.classList.remove("flipped");
+                });
+            });
+        </script>
+    </body>
 </html>
